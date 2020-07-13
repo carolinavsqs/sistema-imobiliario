@@ -1,0 +1,584 @@
+{
+  "id": "591f8841-e9db-4b4a-8a27-35792dfed7ad",
+  "version": "2.0",
+  "name": "CRUD tests 2",
+  "url": "http://127.0.0.1:8000/admin/imovel",
+  "tests": [{
+    "id": "ebb817c7-428a-4257-b9a1-08c98c33371f",
+    "name": "CreateImovel",
+    "commands": [{
+      "id": "f3cf8327-06af-4455-87ad-e6d60de9b3c8",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/admin/imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "374829a3-6d35-45eb-9c3c-d2473c05547d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "496361ac-b142-45e8-81e5-d86d465b7ee0",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4326fe1-6def-4c4b-aede-1eb9d1ebcc07",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_add_new_data",
+      "targets": [
+        ["id=btn_add_new_data", "id"],
+        ["linkText=Add Data", "linkText"],
+        ["css=#btn_add_new_data", "css:finder"],
+        ["xpath=//a[@id='btn_add_new_data']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section/h1/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://127.0.0.1:8000/admin/imovel/add?return_url=http%3A%2F%2F127.0.0.1%3A8000%2Fadmin%2Fimovel&parent_id=&parent_field=']", "xpath:href"],
+        ["xpath=//h1/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Add Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbbd8487-d8cb-4a60-be2a-49df979bbcca",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Add Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab72458d-61c4-4a6d-9778-427c1905a259",
+      "comment": "",
+      "command": "type",
+      "target": "id=CPF_dono_imovel",
+      "targets": [
+        ["id=CPF_dono_imovel", "id"],
+        ["name=CPF_dono_imovel", "name"],
+        ["css=#CPF_dono_imovel", "css:finder"],
+        ["xpath=//input[@id='CPF_dono_imovel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-CPF_dono_imovel']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "25485632569"
+    }, {
+      "id": "e20db696-830a-4ba4-b080-a17d49dc877a",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo_imovel",
+      "targets": [
+        ["id=tipo_imovel", "id"],
+        ["name=tipo_imovel", "name"],
+        ["css=#tipo_imovel", "css:finder"],
+        ["xpath=//select[@id='tipo_imovel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-tipo_imovel']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbc3fdaa-94b3-4160-af34-b420b7c381c8",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo_imovel",
+      "targets": [],
+      "value": "label=Aluguel ou Venda"
+    }, {
+      "id": "a9a532ed-4c52-407f-8a2c-ac5fd145d9f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo_imovel",
+      "targets": [
+        ["id=tipo_imovel", "id"],
+        ["name=tipo_imovel", "name"],
+        ["css=#tipo_imovel", "css:finder"],
+        ["xpath=//select[@id='tipo_imovel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-tipo_imovel']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5757e9d3-d216-4507-82b1-034967f85d6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=CEP",
+      "targets": [
+        ["id=CEP", "id"],
+        ["name=CEP", "name"],
+        ["css=#CEP", "css:finder"],
+        ["xpath=//input[@id='CEP']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-CEP']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fd6387c-a2ab-48f2-b249-913614385480",
+      "comment": "",
+      "command": "type",
+      "target": "id=CEP",
+      "targets": [
+        ["id=CEP", "id"],
+        ["name=CEP", "name"],
+        ["css=#CEP", "css:finder"],
+        ["xpath=//input[@id='CEP']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-CEP']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "37500182"
+    }, {
+      "id": "5ceadbe6-b9dc-4d5d-8361-79ebac1a7010",
+      "comment": "",
+      "command": "click",
+      "target": "id=estado",
+      "targets": [
+        ["id=estado", "id"],
+        ["name=estado", "name"],
+        ["css=#estado", "css:finder"],
+        ["xpath=//select[@id='estado']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-estado']/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3b7011-84f8-46c2-a9b9-ebf86a402b27",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=MG"
+    }, {
+      "id": "7d498064-2130-4d35-808a-86efd5d25956",
+      "comment": "",
+      "command": "click",
+      "target": "id=estado",
+      "targets": [
+        ["id=estado", "id"],
+        ["name=estado", "name"],
+        ["css=#estado", "css:finder"],
+        ["xpath=//select[@id='estado']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-estado']/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "171159de-7593-434f-a12f-f2934a0ebe7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-cidade']/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5fd5444-49f7-4544-a496-788551a952e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["name=cidade", "name"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-cidade']/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "Itajubá"
+    }, {
+      "id": "f9788453-6994-4a4d-b0e3-7647345bac6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-bairro']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c348df82-2394-4dbd-973f-040887d56ea2",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-bairro']/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "BPS"
+    }, {
+      "id": "07edb0c8-7732-42e4-8cf6-c4958f048f55",
+      "comment": "",
+      "command": "click",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-rua']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13824943-a64c-4238-b575-dd5c5ce2c477",
+      "comment": "",
+      "command": "type",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-rua']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "Tigre Maia"
+    }, {
+      "id": "57476689-a73c-41b6-8f0d-9cb136b893d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-numero']/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1995fe0b-c76d-4164-ac60-e0e9d59b4967",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-numero']/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": "769"
+    }, {
+      "id": "062a5660-5a63-46a0-a3db-3961568edab3",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo_contrato",
+      "targets": [
+        ["id=tipo_contrato", "id"],
+        ["name=tipo_contrato", "name"],
+        ["css=#tipo_contrato", "css:finder"],
+        ["xpath=//input[@id='tipo_contrato']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-tipo_contrato']/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "549d7186-3cab-4c5c-aa1e-aae53ba0a30d",
+      "comment": "",
+      "command": "type",
+      "target": "id=tipo_contrato",
+      "targets": [
+        ["id=tipo_contrato", "id"],
+        ["name=tipo_contrato", "name"],
+        ["css=#tipo_contrato", "css:finder"],
+        ["xpath=//input[@id='tipo_contrato']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-tipo_contrato']/div/input", "xpath:idRelative"],
+        ["xpath=//div[10]/div/input", "xpath:position"]
+      ],
+      "value": "Anual"
+    }, {
+      "id": "a9a9e2f4-64fb-45c3-ba11-91357bce9186",
+      "comment": "",
+      "command": "click",
+      "target": "id=valor_venda",
+      "targets": [
+        ["id=valor_venda", "id"],
+        ["name=valor_venda", "name"],
+        ["css=#valor_venda", "css:finder"],
+        ["xpath=//input[@id='valor_venda']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_venda']/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "792ad293-ca21-4548-b928-7b1a3112c0cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor_venda",
+      "targets": [
+        ["id=valor_venda", "id"],
+        ["name=valor_venda", "name"],
+        ["css=#valor_venda", "css:finder"],
+        ["xpath=//input[@id='valor_venda']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_venda']/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1000000"
+    }, {
+      "id": "1dc5bc42-e648-49c8-9967-fe5c1128e59e",
+      "comment": "",
+      "command": "click",
+      "target": "id=valor_aluguel",
+      "targets": [
+        ["id=valor_aluguel", "id"],
+        ["name=valor_aluguel", "name"],
+        ["css=#valor_aluguel", "css:finder"],
+        ["xpath=//input[@id='valor_aluguel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_aluguel']/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76902f44-383c-4e47-b3a1-b3565034a1c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor_aluguel",
+      "targets": [
+        ["id=valor_aluguel", "id"],
+        ["name=valor_aluguel", "name"],
+        ["css=#valor_aluguel", "css:finder"],
+        ["xpath=//input[@id='valor_aluguel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_aluguel']/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": "2500"
+    }, {
+      "id": "ab25f47a-e847-42bb-b816-88e5faa8d56a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "353f4cca-6193-4b15-a6f0-12298cd9870f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Imovel",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ed04c04b-ac1f-4b07-8235-4b2471f20378",
+    "name": "ReadUpdate Imovel",
+    "commands": [{
+      "id": "a1250745-07e0-40e5-b890-dbabca9a8026",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/admin/imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d34859e6-8bb2-4100-a254-479d1d78bd6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b705da96-7b0d-4be8-8405-6a81676075b8",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c062ccbf-d996-4fc5-8a42-c0aea542c63c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-primary > .fa",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-primary > .fa", "css:finder"],
+        ["xpath=//table[@id='table_dashboard']/tbody/tr/td[8]/div/a/i", "xpath:idRelative"],
+        ["xpath=//td[8]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e1c6a1-cf39-4243-a266-6a3a02ec8ec3",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Detail Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af97eb4b-9246-43a5-ad08-b64cd5d0863f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Back To List Data Imovel",
+      "targets": [
+        ["linkText=Back To List Data Imovel", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Back To List Data Imovel')]", "xpath:link"],
+        ["xpath=//section[@id='content_section']/div/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://127.0.0.1:8000/admin/imovel'])[2]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'   Back To List Data Imovel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c83b84c-c6d2-417d-8de8-2795dfc6a6c6",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68786024-3259-402a-b4d2-a883fed2ca15",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-success > .fa",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-success > .fa", "css:finder"],
+        ["xpath=//table[@id='table_dashboard']/tbody/tr/td[8]/div/a[2]/i", "xpath:idRelative"],
+        ["xpath=//td[8]/div/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6efd3a88-471f-4568-bef0-8ce51981a98e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Edit Imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84b212ae-edac-4005-b76d-32be90a7ec5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=content_section",
+      "targets": [
+        ["id=content_section", "id"],
+        ["css=#content_section", "css:finder"],
+        ["xpath=//section[@id='content_section']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/section[2]", "xpath:idRelative"],
+        ["xpath=//section[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8352833-b058-418c-91ed-946536c90026",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor_venda",
+      "targets": [
+        ["id=valor_venda", "id"],
+        ["name=valor_venda", "name"],
+        ["css=#valor_venda", "css:finder"],
+        ["xpath=//input[@id='valor_venda']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_venda']/div/input", "xpath:idRelative"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": "1200000"
+    }, {
+      "id": "c35ba296-00f6-44e5-9ee3-3edb36315197",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-group-valor_aluguel",
+      "targets": [
+        ["id=form-group-valor_aluguel", "id"],
+        ["css=#form-group-valor_aluguel", "css:finder"],
+        ["xpath=//div[@id='form-group-valor_aluguel']", "xpath:attributes"],
+        ["xpath=//div[@id='parent-form-area']/div[12]", "xpath:idRelative"],
+        ["xpath=//div[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd7858c-2058-42be-90e3-9a1a2053256b",
+      "comment": "",
+      "command": "type",
+      "target": "id=valor_aluguel",
+      "targets": [
+        ["id=valor_aluguel", "id"],
+        ["name=valor_aluguel", "name"],
+        ["css=#valor_aluguel", "css:finder"],
+        ["xpath=//input[@id='valor_aluguel']", "xpath:attributes"],
+        ["xpath=//div[@id='form-group-valor_aluguel']/div/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/input", "xpath:position"]
+      ],
+      "value": "3500"
+    }, {
+      "id": "7a2d111d-c67a-450b-bbf7-f30b49696363",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd6928a2-f339-430e-b069-e3fa04b25f7f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CRUDBooster: Imovel",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c6227ec-dd84-42b1-a3bd-63666f49c7bf",
+    "name": "Delete Imovel ",
+    "commands": [{
+      "id": "d92bd602-cdd9-4952-94ad-81d6c545e2a7",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/admin/imovel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "572c0bf3-d26a-49a6-9077-dcce9d8db49b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-warning",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-warning", "css:finder"],
+        ["xpath=//a[@onclick='swal({   \n\t\t\t\ttitle: \"Are you sure ?\",   \n\t\t\t\ttext: \"You will not be able to recover this record data!\",   \n\t\t\t\ttype: \"warning\",   \n\t\t\t\tshowCancelButton: true,   \n\t\t\t\tconfirmButtonColor: \"#ff0000\",   \n\t\t\t\tconfirmButtonText: \"Yes!\",  \n\t\t\t\tcancelButtonText: \"No\",  \n\t\t\t\tcloseOnConfirm: false }, \n\t\t\t\tfunction(){  location.href=\"http://127.0.0.1:8000/admin/imovel/delete/3\" });']", "xpath:attributes"],
+        ["xpath=//table[@id='table_dashboard']/tbody/tr/td[8]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:;')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "733b4190-7144-4609-bfe3-642bd4dfe879",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirm",
+      "targets": [
+        ["css=.confirm", "css:finder"],
+        ["xpath=//div[7]/div[7]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ab5b2de2-45ea-4b61-aa06-1c816a5c7d5b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ebb817c7-428a-4257-b9a1-08c98c33371f"]
+  }],
+  "urls": ["http://127.0.0.1:8000/admin/imovel"],
+  "plugins": []
+}
